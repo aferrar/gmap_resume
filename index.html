@@ -27,11 +27,11 @@
                 <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
                     <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
                 <br/>
-            <a id="psu_click" href="#"><img id="ccny" src="images/ccny_icon.svg"></img></a>
+            <a id="psu_click" href="#"><img id="ccny" src="images/psu_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
                     <a href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</a>
                 <br/>
-            <a id="ccny_click" href="#"><img id="ccny" src="images/psu_icon.svg"></img></a>
+            <a id="ccny_click" href="#"><img id="ccny" src="images/ccny_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
                     <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
                 <br/>
@@ -169,6 +169,50 @@
           }
         });
 
+        var iconBase = 'images/';
+        var icons = {
+          hunter: {
+            name: 'HUNTER COLLEGE',
+            icon: iconBase + 'hunter_icon.svg'
+          },
+          psu: {
+            name: 'PENN STATE UNIVERSITY',
+            icon: iconBase + 'psu_icon.svg'
+          },
+          ccny: {
+            name: 'CITY COLLEGE OF NY',
+            icon: iconBase + 'ccny_icon.svg'
+          }
+        };
+
+        function addMarker(feature) {
+          var marker = new google.maps.Marker({
+            position: feature.position,
+            icon: icons[feature.type].icon,
+            map: map
+          });
+        }
+
+
+        var features = [
+          {
+            position: new google.maps.LatLng(40.768599, -73.964729),
+            scaledSize: new google.maps.Size(25, 25),
+            type: 'hunter'
+          }, {
+            position: new google.maps.LatLng(40.7982, 77.8599),
+            scaledSize: new google.maps.Size(25, 25),
+            type: 'psu'
+          }, {
+            position: new google.maps.LatLng(40.821061, -73.951133),
+            scaledSize: new google.maps.Size(5, 5),
+            type: 'ccny'
+          }
+        ];
+
+        for (var i = 0, feature; feature = features[i]; i++) {
+          addMarker(feature);
+        }
         //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');

@@ -22,7 +22,7 @@
 #legend_content {
   position: relative;
   height: 82%;
-  padding: 45px 15px 25px 15px;
+  padding: 10px 15px 25px 15px;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   text-align: center;
@@ -85,24 +85,22 @@ li {
   color: black;
 }
 
-.break {
-  margin-bottom: 19px;
-}
-
 img {
   position: relative;
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
   display: block;
   border-width: 1px;
   border-color: black;
   padding-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
  }
 
 .legend_item_descrip {
   position: relative;                                             
+  font-size: 12px;
 }
 
 a {

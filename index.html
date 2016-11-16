@@ -1,6 +1,7 @@
 <! DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,13 +25,16 @@
         <hr class="break"></hr>
             <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="images/hunter_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
-                <br></br>
+                    <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
+                <br/>
             <a id="psu_click" href="#"><img id="ccny" src="images/ccny_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
-                <br></br>
+                    <a href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</a>
+                <br/>
             <a id="ccny_click" href="#"><img id="ccny" src="images/psu_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
-                <br></br>
+                    <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
+                <br/>
         </div>
     </div>
  <!--   <div id="welcome">
@@ -158,7 +162,7 @@
         // to the map type control.
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 40.748817, lng: -73.985428},
-          zoom: 14,
+          zoom: 12,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
                     'styled_map']

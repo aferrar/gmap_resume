@@ -10,12 +10,13 @@
         <nav>
             <ul>
                 <li>
-                    <button id="career_button">
-                        Professional
-                    </button>
+                    <a href="#"><button id="career_button">Professional</button></a>
                 </li>
                 <li>
-                    <button id="personal_button">Personal</button>
+                    <a href="#"><button id="academic_button">Academic</button></a>
+                </li>
+                <li>
+                    <a href="#"><button id="personal_button">Personal</button></a>
                 </li>
             </ul>
         </nav>
@@ -35,6 +36,9 @@
                 <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
                     <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
                 <br/>
+            <a id="hsmse_click" href="#"><img id="hsmse" src="images/hsmse_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
+                    <a href="#" class="legend_item_descrip" id="ccny_record">[]</a>
         </div>
     </div>
  <!--   <div id="welcome">
@@ -182,6 +186,10 @@
           ccny: {
             name: 'CITY COLLEGE OF NY',
             icon: iconBase + 'ccny_marker.svg'
+          },
+          hsmse: {
+            name: 'HS MATH,SCI,ENGINEERING' ,
+            icon: iconBase + 'hsmse_marker.svg'
           }
         };
 
@@ -204,9 +212,13 @@
             scaledSize: new google.maps.Size(25, 25),
             type: 'psu'
           }, {
-            position: new google.maps.LatLng(40.821061, -73.951133),
-            scaledSize: new google.maps.Size(5, 5),
+            position: new google.maps.LatLng(40.819513, -73.950906),
+            scaledSize: new google.maps.Size(25, 25),
             type: 'ccny'
+          }, {
+            position: new google.maps.LatLng(40.821587, -73.949516),
+            scaledSize: new google.maps.Size(50, 50),
+            type: 'hsmse'
           }
         ];
 

@@ -10,23 +10,24 @@
 #legend {
   position: absolute;
   z-index: 1;
-  width: 175px;
+  width: 250px;
   margin: 50px auto 0;
   padding: 0px;
   height: 80%;
-  opacity: .8;
+  opacity: .9;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 #legend_content {
   position: relative;
   height: 82%;
   padding: 10px 15px 25px 15px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   text-align: center;
 }
+
 
 nav { 
   position: relative;
@@ -55,13 +56,33 @@ li {
     border-bottom: none;
     color: white;
     border-color: black;
-    padding: 10px 10px;
+    padding: 10px 5px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 13px;
+    font-size: 11.5px;
     border-top-left-radius: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 78px;
     
+}
+
+#academic_button {
+    background-color: black; /* Test colors later -- Green - #4CAF50 */
+    border-width: 1px;
+    border-bottom: none;
+    color: white;
+    border-color: black;
+    padding: 10px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 11.5px;
+    border-top-left-radius: 0px;
+    font-weight: bold;
+    text-decoration: underline;
+    width: 78px;
 }
 
 #personal_button {
@@ -70,13 +91,15 @@ li {
     border-bottom: none;
     color: white;
     border-color: black;
-    padding: 10px 10px;
+    padding: 10px 2px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-size: 13px;
+    font-size: 11.5px;
     border-top-right-radius: 25px;
-
+    font-weight: bold;
+    text-decoration: underline;
+    width: 78px;
 }
 
 #category_title {
@@ -101,6 +124,7 @@ img {
 .legend_item_descrip {
   position: relative;                                             
   font-size: 12px;
+  display: block;
 }
 
 a {

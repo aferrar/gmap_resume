@@ -21,22 +21,60 @@
             </ul>
         </nav>
         <div id="legend_content">
+        <div id="academic_content">
         <hr></hr>
-        <div id="category_title">ACADEMICS</div>
+        <div id="academic_title" class="category_title">ACADEMICS</div>
         <hr class="break"></hr>
-            <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="images/hunter_icon.svg"></img></a>
+            <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="assets/images/hunter_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
                     <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
                 <br/>
-            <a id="psu_click" href="#"><img id="ccny" src="images/psu_icon.svg"></img></a>
+            <a id="psu_click" href="#"><img id="ccny" src="assets/images/psu_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
                     <a href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</a>
                 <br/>
-            <a id="ccny_click" href="#"><img id="ccny" src="images/ccny_icon.svg"></img></a>
+            <a id="ccny_click" href="#"><img id="ccny" src="assets/images/ccny_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
                     <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
                 <br/>
-            <a id="hsmse_click" href="#"><img id="hsmse" src="images/hsmse_icon.svg"></img></a>
+            <a id="hsmse_click" href="#"><img id="hsmse" src="assets/images/hsmse_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
+                    <a href="#" class="legend_item_descrip" id="ccny_record">[]</a>
+        </div>
+        </div>
+        <!-- <div id="professional_title" class="category_title">PROFESSIONAL</div>
+        <hr class="break"></hr>
+            <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="assets/images/hunter_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
+                    <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
+                <br/>
+            <a id="psu_click" href="#"><img id="ccny" src="assets/images/psu_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
+                    <a href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</a>
+                <br/>
+            <a id="ccny_click" href="#"><img id="ccny" src="assets/images/ccny_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
+                    <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
+                <br/>
+            <a id="hsmse_click" href="#"><img id="hsmse" src="assets/images/hsmse_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
+                    <a href="#" class="legend_item_descrip" id="ccny_record">[]</a>
+        </div>
+        <div id="personal_title" class="category_title">PERSONAL</div>
+        <hr class="break"></hr>
+            <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="assets/images/hunter_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
+                    <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
+                <br/>
+            <a id="psu_click" href="#"><img id="ccny" src="assets/images/psu_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
+                    <a href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</a>
+                <br/>
+            <a id="ccny_click" href="#"><img id="ccny" src="assets/images/ccny_icon.svg"></img></a>
+                <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
+                    <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
+                <br/>
+            <a id="hsmse_click" href="#"><img id="hsmse" src="assets/images/hsmse_icon.svg"></img></a>
                 <a href="#" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
                     <a href="#" class="legend_item_descrip" id="ccny_record">[]</a>
         </div>
@@ -44,194 +82,8 @@
  <!--   <div id="welcome">
         <div id ="banner"></div>
         <div id ="banner_content"></div> -->
-    <script>
-      function initMap() {
-
-        // Create a new StyledMapType object, passing it an array of styles,
-        // and the name to be displayed on the map type control.
-        var styledMapType = new google.maps.StyledMapType(
-            [
-              {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
-              {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
-              {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
-              {
-                featureType: 'administrative',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#c9b2a6'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#dcd2be'}]
-              },
-              {
-                featureType: 'administrative.land_parcel',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#ae9e90'}]
-              },
-              {
-                featureType: 'landscape.natural',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'poi',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#93817c'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#a5b076'}]
-              },
-              {
-                featureType: 'poi.park',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#447530'}]
-              },
-              {
-                featureType: 'road',
-                elementType: 'geometry',
-                stylers: [{color: '#f5f1e6'}]
-              },
-              {
-                featureType: 'road.arterial',
-                elementType: 'geometry',
-                stylers: [{color: '#fdfcf8'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry',
-                stylers: [{color: '#f8c967'}]
-              },
-              {
-                featureType: 'road.highway',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#e9bc62'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry',
-                stylers: [{color: '#e98d58'}]
-              },
-              {
-                featureType: 'road.highway.controlled_access',
-                elementType: 'geometry.stroke',
-                stylers: [{color: '#db8555'}]
-              },
-              {
-                featureType: 'road.local',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#806b63'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#8f7d77'}]
-              },
-              {
-                featureType: 'transit.line',
-                elementType: 'labels.text.stroke',
-                stylers: [{color: '#ebe3cd'}]
-              },
-              {
-                featureType: 'transit.station',
-                elementType: 'geometry',
-                stylers: [{color: '#dfd2ae'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'geometry.fill',
-                stylers: [{color: '#17263c'}]
-              },
-              {
-                featureType: 'water',
-                elementType: 'labels.text.fill',
-                stylers: [{color: '#92998d'}]
-              }
-            ],
-            {name: 'Styled Map'});
-
-        // Create a map object, and include the MapTypeId to add
-        // to the map type control.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.748817, lng: -73.985428},
-          zoom: 12,
-          mapTypeControlOptions: {
-            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-                    'styled_map']
-          }
-        });
-
-        var iconBase = 'images/';
-        var icons = {
-          hunter: {
-            name: 'HUNTER COLLEGE',
-            icon: iconBase + 'hunter_marker.svg'
-          },
-          psu: {
-            name: 'PENN STATE UNIVERSITY',
-            icon: iconBase + 'psu_marker.svg'
-          },
-          ccny: {
-            name: 'CITY COLLEGE OF NY',
-            icon: iconBase + 'ccny_marker.svg'
-          },
-          hsmse: {
-            name: 'HS MATH,SCI,ENGINEERING' ,
-            icon: iconBase + 'hsmse_marker.svg'
-          }
-        };
-
-        function addMarker(feature) {
-          var marker = new google.maps.Marker({
-            position: feature.position,
-            icon: icons[feature.type].icon,
-            map: map
-          });
-        }
-
-
-        var features = [
-          {
-            position: new google.maps.LatLng(40.768599, -73.964729),
-            scaledSize: new google.maps.Size(25, 25),
-            type: 'hunter'
-          }, {
-            position: new google.maps.LatLng(40.8021458633399, -77.8670942478257),
-            scaledSize: new google.maps.Size(25, 25),
-            type: 'psu'
-          }, {
-            position: new google.maps.LatLng(40.819513, -73.950906),
-            scaledSize: new google.maps.Size(25, 25),
-            type: 'ccny'
-          }, {
-            position: new google.maps.LatLng(40.821587, -73.949516),
-            scaledSize: new google.maps.Size(50, 50),
-            type: 'hsmse'
-          }
-        ];
-
-        for (var i = 0, feature; feature = features[i]; i++) {
-          addMarker(feature);
-        }
-        //Associate the styled map with the MapTypeId and set it to display.
-        map.mapTypes.set('styled_map', styledMapType);
-        map.setMapTypeId('styled_map');
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBWSZiEbSsp485aHDHnFlji1ajnSKc0zk&callback=initMap">
-    </script>
+    <script type="text/javascript" src="assets/jquery-3.1.1.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBWSZiEbSsp485aHDHnFlji1ajnSKc0zk&callback=initMap"></script>
+    <script type="text/javascript" src="application.js"></script>
   </body>
 </html>

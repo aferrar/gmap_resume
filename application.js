@@ -184,7 +184,11 @@ $(document).ready(function initMap() {
 });
 
 $(document).ready(function() {
-  $("#academic_buttton").click(function() {
-    $("#academic_title").hide();
-  }); 
-});
+  $("nav a").click(function() {
+    var target = this.rel;
+    $("#legend_content dl").hide();
+    $("#"+target+"_content").show();
+    $("nav button").css({"background-color": "black", "color": "white"});
+    $("#"+target+"_button").css({"background-color": "white", "color": "black"});
+  })
+}); 

@@ -13,23 +13,12 @@
   width: 250px;
   margin: 50px auto 0;
   padding: 0px;
-  height: 80%;
+  height: 65%;
   opacity: .9;
   background-color: white;
   border-radius: 50px;
 }
 
-#legend_content {
-  position: relative;
-  height: 82%;
-  padding: 10px 15px 25px 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  text-align: center;
-}
-
-#academic_content {
-}
 nav { 
   position: relative;
   top: 0px;
@@ -55,7 +44,7 @@ button {
   cursor: pointer;
 }
 
-#career_button {
+#professional_button {
     background-color: black; /* Test colors later -- Green - #4CAF50 */
     border-width: 1px;
     border-bottom: none;
@@ -103,10 +92,34 @@ button {
     width: 78px;
 }
 
+#legend_content {
+  position: relative;
+  padding: 25px 10px 25px 10px;
+  text-align: center;
+  }
+
+#professional_content {
+  display: none;
+}
+
+#academic_content {
+  display: none;
+
+}
+
+#personal_content {
+  display: none;
+}
+
+
 #category_title {
   text-align: center;
   font-size: 18px;
   color: black;
+}
+
+.break {
+  margin-bottom: 50px;
 }
 
 img {

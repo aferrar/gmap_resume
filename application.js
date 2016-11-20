@@ -2,6 +2,19 @@ $(document).ready(function initMap() {
 
   // Create a new StyledMapType object, passing it an array of styles,
   // and the name to be displayed on the map type control.
+ 
+ /* var satelliteMapType = new google.maps.satelliteMapType(
+      [
+        {
+          featureType: "all",
+          elementType: "labels",
+            stylers: [
+            {visibility: "off"}
+            ]
+        }]
+      ,
+      {name: "Satellite Map"});
+*/
   var styledMapType = new google.maps.StyledMapType(
       [
         {
@@ -70,8 +83,13 @@ $(document).ready(function initMap() {
       position: feature.position,
       icon: icons[feature.type].icon,
       map: map
+      
     });
-  }
+
+    marker.addListener('click', function(){
+        map.panTo(marker.getPosition());
+      });
+  };
 
 
   var features = [
@@ -112,14 +130,18 @@ $(document).ready(function initMap() {
       scaledSize: new google.maps.Size(5, 5),
       type: 'local153'
     },
+
+    
   ];
 
   for (var i = 0, feature; feature = features[i]; i++) {
     addMarker(feature);
   }
+
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('styled_map', styledMapType);
   map.setMapTypeId('styled_map');
+
 });
 
 
@@ -131,10 +153,11 @@ $(document).ready(function() {
     $("#"+target+"_content").fadeIn(1500);
     $("nav button").css({"background-color": "black", "color": "white"});
     $("#"+target+"_button").css({"background-color": "white", "color": "black"});
-  })
+  });
   $(".back_to_contacts").click(function() {
     $("#legend_content dl").hide();
     $("#welcome_content").fadeIn(1500);
+    $("#contact_links").fadeIn(1500);
     $("nav button").css({"background-color": "black", "color": "white"});
-  })
+  });
 }); 

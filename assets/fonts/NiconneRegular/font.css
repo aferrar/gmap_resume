@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'NiconneRegular';
+	src: url('./NiconneRegular.eot');
+	src: local('NiconneRegular'), url('./NiconneRegular.woff') format('woff'), url('./NiconneRegular.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_69895">Text with this font applied</p> */
+.fontsforweb_fontid_69895 {
+	font-family: 'NiconneRegular' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'intimacy';
+	src: url('./intimacy.eot');
+	src: local('intimacy'), url('./intimacy.woff') format('woff'), url('./intimacy.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_318">Text with this font applied</p> */
+.fontsforweb_fontid_318 {
+	font-family: 'intimacy' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'registry';
+	src: url('./registry.eot');
+	src: local('registry'), url('./registry.woff') format('woff'), url('./registry.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_728">Text with this font applied</p> */
+.fontsforweb_fontid_728 {
+	font-family: 'registry' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

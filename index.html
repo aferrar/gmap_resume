@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link href="assets/images/af.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"> <!-- Font Awesome -->
 </head>
 <body>
     <div id="map"></div>
@@ -21,30 +23,64 @@
             </ul>
         </nav>
         <div id="legend_content">
+            <dl id="welcome_content">
+                <h1>Welcome,</h1>
+                <p>My name is Adrian Ferrar.</p>
+                <p>Thank you for visiting my webpage.</p>
+                <p>Please select from the navigation links above to expand this legend.</p>
+                <p>From there you can begin your geospatial journey to learn more about me.</p>
+                <p>If you're short on time feel free to jump straight to my <a id="resume_link" href="#">resume</a> or see how to contact me below.</p> 
+            </dl>
+            <dl id="contact_links">
+                <ul class="contact_links">
+                    <li class="twitter">
+                      <a id="twitter_link" href="https://twitter.com/aferrar90"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                    </li>
+                    <li class="linkedin">
+                      <a id="linkedin_link" href=""><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                    </li>
+                    <li class="github">
+                      <a id="github_link" href="#"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                    </li>
+                    <br />
+                    <li class="fcc">
+                      <a id="fcc_link" href="#"><i class="fa fa-code" aria-hidden="true"></i> Free Code Camp</a>
+                    </li>
+                    <li class="gmail">
+                      <a id="gmail_link" href="#"><i class="fa fa-google" aria-hidden="true"></i> Gmail</a>
+                    </li>
+                </ul>
+            </dl>
             <dl id="professional_content">
+                <a class="back_to_contacts" href="#" rel="">Home</a>
             <hr></hr>
             <dt id="professional_title" class="category_title">PROFESSIONAL</dt>
             <hr class="break"></hr>
-                <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="assets/images/hunter_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
-                        <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
+                <a id="nyrp_click" href="#"><img align ="center" id ="nyrp"  src="assets/images/nyrp_icon.svg"></img></a>
+                    <a href="#" class="legend_item_descrip" id="nyrp_descrip">NEW YORK RESTORATION PROJECT</a>
+                        <a href="#" class="legend_item_descrip" id="hunter_record">[Environmental Steward]</a>
                     <br/>
-                <a id="psu_click" href="#"><img id="ccny" src="assets/images/psu_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
-                        <a href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</a>
+                <a id="atlas_click" href="#"><img id="atlas" src="assets/images/atlas_icon.svg"></img></a>
+                    <a href="#" class="legend_item_descrip" id="atlas_descrip">ATLAS ENVIRONMENTAL LABORATORY</a>
+                        <a href="#" class="legend_item_descrip" id="atlas_record">[Environmental Lab Analyst]</a>
                     <br/>
-                <a id="ccny_click" href="#"><img id="ccny" src="assets/images/ccny_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
-                        <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
+                <a id="telepathy_click" href="#"><img id="ccny" src="assets/images/telepathywht_icon.svg"></img></a>
+                    <a href="#" class="legend_item_descrip" id="telepathy_descrip">TELEPATHY</a>
+                        <a href="#" class="legend_item_descrip" id="telepathy_record">[Typist/Programming Intern]</a>
                     <br/>
-                <a id="hsmse_click" href="#"><img id="hsmse" src="assets/images/hsmse_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
-                        <a href="#" class="legend_item_descrip" id="ccny_record">[]</a>
+                <a id="juliarosa_click" href="#"><img id="ccny" src="assets/images/juliarosa_icon.svg"></img></a>
+                    <a href="#" class="legend_item_descrip" id="juliarosa_descrip">JULIA ROSA FLORAL EVENT DESIGN</a>
+                        <a href="#" class="legend_item_descrip" id="juliarosa_record">[Sustainability Intern]</a>
+                    <br/>
+                <a id="local153_click" href="#"><img id="juliarosa" src="assets/images/local153_icon.svg"></img></a>
+                    <a href="#" class="legend_item_descrip" id="local153_descrip">OPEIU: LOCAL 153</a>
+                        <a href="#" class="legend_item_descrip" id="local153_record">[Administrative Assistant]</a>
             </dl>
             <dl id="academic_content">
-            <hr></hr>
-            <dt id="academic_title" class="category_title">ACADEMICS</dt>
-            <hr class="break"></hr>
+                <a class="back_to_contacts" href="#" rel="">Home</a>
+                <hr></hr>
+                <dt id="academic_title" class="category_title">ACADEMICS</dt>
+                <hr id="break_academic" class="break"></hr>
                 <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="assets/images/hunter_icon.svg"></img></a>
                     <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
                         <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
@@ -59,27 +95,14 @@
                     <br/>
                 <a id="hsmse_click" href="#"><img id="hsmse" src="assets/images/hsmse_icon.svg"></img></a>
                     <a href="#" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
-                        <a href="#" class="legend_item_descrip" id="ccny_record">[]</a>
+                        <a href="#" class="legend_item_descrip" id="ccny_record">[Coursework]</a>
             </dl>
             <dl id="personal_content">
-            <hr></hr>
-            <dt id="personal_title" class="category_title">PERSONAL</dt>
-            <hr class="break"></hr>
-                <a id="hunter_click" href="#"><img align ="center" id ="hunter"  src="assets/images/hunter_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
-                        <a href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</a>
-                    <br/>
-                <a id="psu_click" href="#"><img id="ccny" src="assets/images/psu_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
-                        <a href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</a>
-                    <br/>
-                <a id="ccny_click" href="#"><img id="ccny" src="assets/images/ccny_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
-                        <a href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</a>
-                    <br/>
-                <a id="hsmse_click" href="#"><img id="hsmse" src="assets/images/hsmse_icon.svg"></img></a>
-                    <a href="#" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
-                        <a href="#" class="legend_item_descrip" id="ccny_record">[]</a>
+                <a class="back_to_contacts" href="#" rel="">Home</a>
+                <hr></hr>
+                <dt id="personal_title" class="category_title">PERSONAL</dt>
+                <hr class="break"></hr>
+                <h3>Under Construction</h3>
             </dl>
         </div>
         <!-- <div id="professional_title" class="category_title">PROFESSIONAL</div>

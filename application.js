@@ -4,115 +4,14 @@ $(document).ready(function initMap() {
   // and the name to be displayed on the map type control.
   var styledMapType = new google.maps.StyledMapType(
       [
-        {elementType: 'geometry', stylers: [{color: '#ebe3cd'}]},
-        {elementType: 'labels.text.fill', stylers: [{color: '#523735'}]},
-        {elementType: 'labels.text.stroke', stylers: [{color: '#f5f1e6'}]},
         {
-          featureType: 'administrative',
-          elementType: 'geometry.stroke',
-          stylers: [{color: '#c9b2a6'}]
-        },
-        {
-          featureType: 'administrative.land_parcel',
-          elementType: 'geometry.stroke',
-          stylers: [{color: '#dcd2be'}]
-        },
-        {
-          featureType: 'administrative.land_parcel',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#ae9e90'}]
-        },
-        {
-          featureType: 'landscape.natural',
-          elementType: 'geometry',
-          stylers: [{color: '#dfd2ae'}]
-        },
-        {
-          featureType: 'poi',
-          elementType: 'geometry',
-          stylers: [{color: '#dfd2ae'}]
-        },
-        {
-          featureType: 'poi',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#93817c'}]
-        },
-        {
-          featureType: 'poi.park',
-          elementType: 'geometry.fill',
-          stylers: [{color: '#a5b076'}]
-        },
-        {
-          featureType: 'poi.park',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#447530'}]
-        },
-        {
-          featureType: 'road',
-          elementType: 'geometry',
-          stylers: [{color: '#f5f1e6'}]
-        },
-        {
-          featureType: 'road.arterial',
-          elementType: 'geometry',
-          stylers: [{color: '#fdfcf8'}]
-        },
-        {
-          featureType: 'road.highway',
-          elementType: 'geometry',
-          stylers: [{color: '#f8c967'}]
-        },
-        {
-          featureType: 'road.highway',
-          elementType: 'geometry.stroke',
-          stylers: [{color: '#e9bc62'}]
-        },
-        {
-          featureType: 'road.highway.controlled_access',
-          elementType: 'geometry',
-          stylers: [{color: '#e98d58'}]
-        },
-        {
-          featureType: 'road.highway.controlled_access',
-          elementType: 'geometry.stroke',
-          stylers: [{color: '#db8555'}]
-        },
-        {
-          featureType: 'road.local',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#806b63'}]
-        },
-        {
-          featureType: 'transit.line',
-          elementType: 'geometry',
-          stylers: [{color: '#dfd2ae'}]
-        },
-        {
-          featureType: 'transit.line',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#8f7d77'}]
-        },
-        {
-          featureType: 'transit.line',
-          elementType: 'labels.text.stroke',
-          stylers: [{color: '#ebe3cd'}]
-        },
-        {
-          featureType: 'transit.station',
-          elementType: 'geometry',
-          stylers: [{color: '#dfd2ae'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'geometry.fill',
-          stylers: [{color: '#17263c'}]
-        },
-        {
-          featureType: 'water',
-          elementType: 'labels.text.fill',
-          stylers: [{color: '#92998d'}]
-        }
-      ],
+          featureType: "all",
+          elementType: "labels",
+          stylers: [
+        { visibility: "off" }
+          ]
+        }]
+      ,
       {name: 'Styled Map'});
 
   // Create a map object, and include the MapTypeId to add
@@ -143,7 +42,27 @@ $(document).ready(function initMap() {
     hsmse: {
       name: 'HS MATH,SCI,ENGINEERING' ,
       icon: iconBase + 'hsmse_marker.svg'
-    }
+    },
+    nyrp: {
+      name: 'NEW YORK RESTORATION PROJECT' ,
+      icon: iconBase + 'nyrp_marker.svg'
+    },
+    atlas: {
+      name: 'ATLAS ENVIRONMENTAL LABORATORY' ,
+      icon: iconBase + 'atlas_marker.svg'
+    },
+    telepathy: {
+      name: 'TELEPATHY STARTUP' ,
+      icon: iconBase + 'telepathyblk_marker.svg'
+    },
+    juliarosa: {
+      name: 'JULIA ROSA FLORAL EVENT DESIGN' ,
+      icon: iconBase + 'juliarosa_marker.svg'
+    },
+    local153: {
+      name: 'OPEIU: LOCAL 153' ,
+      icon: iconBase + 'local153_marker.svg'
+    },
   };
 
   function addMarker(feature) {
@@ -172,7 +91,27 @@ $(document).ready(function initMap() {
       position: new google.maps.LatLng(40.821587, -73.949516),
       scaledSize: new google.maps.Size(50, 50),
       type: 'hsmse'
-    }
+    }, {
+      position: new google.maps.LatLng(40.856926, -73.921887),
+      scaledSize: new google.maps.Size(25, 25),
+      type: 'nyrp'
+    }, {
+      position: new google.maps.LatLng(40.753261, -73.991504),
+      scaledSize: new google.maps.Size(25, 25),
+      type: 'atlas'
+    }, {
+      position: new google.maps.LatLng(40.703299, -73.987807),
+      scaledSize: new google.maps.Size(25, 25),
+      type: 'telepathy'
+    }, {
+      position: new google.maps.LatLng(40.746314, -73.991736),
+      scaledSize: new google.maps.Size(25, 25),
+      type: 'juliarosa'
+    }, {
+      position: new google.maps.LatLng(40.737143, -73.996844),
+      scaledSize: new google.maps.Size(5, 5),
+      type: 'local153'
+    },
   ];
 
   for (var i = 0, feature; feature = features[i]; i++) {
@@ -183,12 +122,19 @@ $(document).ready(function initMap() {
   map.setMapTypeId('styled_map');
 });
 
+
+  //Legend navigation logic
 $(document).ready(function() {
   $("nav a").click(function() {
     var target = this.rel;
     $("#legend_content dl").hide();
-    $("#"+target+"_content").show();
+    $("#"+target+"_content").fadeIn(1500);
     $("nav button").css({"background-color": "black", "color": "white"});
     $("#"+target+"_button").css({"background-color": "white", "color": "black"});
+  })
+  $(".back_to_contacts").click(function() {
+    $("#legend_content dl").hide();
+    $("#welcome_content").fadeIn(1500);
+    $("nav button").css({"background-color": "black", "color": "white"});
   })
 }); 

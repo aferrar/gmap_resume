@@ -85,6 +85,7 @@ li {
 
 button {
   cursor: pointer;
+  outline: 0;
 }
 
 #professional_button {
@@ -124,7 +125,7 @@ button {
     display: inline;
     font-size: 11.5px;
     font-weight: bold;
-    width: 78px;
+    width: 86px;
     opacity: .85;
     border: none;
     border-top-right-radius: 25px;

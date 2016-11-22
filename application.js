@@ -1,3 +1,5 @@
+
+var map;
 $(document).ready(function initMap() {
 
   // Create a new StyledMapType object, passing it an array of styles,
@@ -29,11 +31,11 @@ $(document).ready(function initMap() {
 
   // Create a map object, and include the MapTypeId to add
   // to the map type control.
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 40.748817, lng: -73.985428},
+   map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 40.763377, lng: -73.994049},
     zoom: 12,
     mapTypeControlOptions: {
-      mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+    mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
               'styled_map']
     }
   });
@@ -88,9 +90,30 @@ $(document).ready(function initMap() {
 
     marker.addListener('click', function(){
         map.panTo(marker.getPosition());
+        map.setZoom(19);
+        map.setMapTypeId('satellite');
+        map.marker.setVisible(false);
       });
   };
 
+  $(".back_to_contacts").click(function() {
+    map.panTo({lat: 40.763377, lng: -73.994049});
+    map.setZoom(12);
+    map.mapTypes.set('styled_map', styledMapType);
+    map.setMapTypeId('styled_map'); 
+  });
+
+  $(".legend_item_descrip").click(function(feature) {
+    var target = this.rel;
+    for (var i=0, feature; feature = features[i]; i++) {
+      if (feature.type === target) {
+          map.panTo(feature.position);
+          map.setZoom(19);
+          map.setMapTypeId('satellite');
+      }
+    }
+
+  })
 
   var features = [
     {
@@ -102,7 +125,7 @@ $(document).ready(function initMap() {
       scaledSize: new google.maps.Size(25, 25),
       type: 'psu'
     }, {
-      position: new google.maps.LatLng(40.819513, -73.950906),
+      position: new google.maps.LatLng(40.820438, -73.948983),
       scaledSize: new google.maps.Size(25, 25),
       type: 'ccny'
     }, {
@@ -140,7 +163,7 @@ $(document).ready(function initMap() {
 
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('styled_map', styledMapType);
-  map.setMapTypeId('styled_map');
+  map.setMapTypeId('styled_map'); 
 
 });
 

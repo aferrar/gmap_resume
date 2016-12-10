@@ -48,7 +48,7 @@ $(document).ready(function initMap() {
     },
     psu: {
       name: 'PENN STATE UNIVERSITY',
-      icon: iconBase + 'psu_marker.svg'
+      icon: iconBase + 'psu_marker.jpg'
     },
     ccny: {
       name: 'CITY COLLEGE OF NY',
@@ -84,18 +84,25 @@ $(document).ready(function initMap() {
     var marker = new google.maps.Marker({
       position: feature.position,
       icon: icons[feature.type].icon,
-      map: map
-      
+      map: map,
+      animation: google.maps.Animation.DROP,
     });
 
     marker.addListener('click', function(){
         map.panTo(marker.getPosition());
         map.setZoom(19);
         map.setMapTypeId('satellite');
-        map.marker.setVisible(false);
       });
   };
-
+  
+  function drop() {
+    for (var i =0; i < features.length; i++) {
+      setTimeout(function() {
+        addMarker();
+      }, i * 500);
+    }
+  }
+  
   $(".back_to_contacts").click(function() {
     map.panTo({lat: 40.763377, lng: -73.994049});
     map.setZoom(12);
@@ -112,45 +119,44 @@ $(document).ready(function initMap() {
           map.setMapTypeId('satellite');
       }
     }
-
-  })
+  });
 
   var features = [
     {
-      position: new google.maps.LatLng(40.768599, -73.964729),
-      scaledSize: new google.maps.Size(25, 25),
+      position: new google.maps.LatLng(40.768663, -73.964666),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'hunter'
     }, {
       position: new google.maps.LatLng(40.8021458633399, -77.8670942478257),
-      scaledSize: new google.maps.Size(25, 25),
+      scaledSize: new google.maps.Size(1000, 10000),
       type: 'psu'
     }, {
       position: new google.maps.LatLng(40.820438, -73.948983),
-      scaledSize: new google.maps.Size(25, 25),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'ccny'
     }, {
       position: new google.maps.LatLng(40.821587, -73.949516),
-      scaledSize: new google.maps.Size(50, 50),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'hsmse'
     }, {
       position: new google.maps.LatLng(40.856926, -73.921887),
-      scaledSize: new google.maps.Size(25, 25),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'nyrp'
     }, {
       position: new google.maps.LatLng(40.753261, -73.991504),
-      scaledSize: new google.maps.Size(25, 25),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'atlas'
     }, {
       position: new google.maps.LatLng(40.703299, -73.987807),
-      scaledSize: new google.maps.Size(25, 25),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'telepathy'
     }, {
       position: new google.maps.LatLng(40.746314, -73.991736),
-      scaledSize: new google.maps.Size(25, 25),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'juliarosa'
     }, {
       position: new google.maps.LatLng(40.737143, -73.996844),
-      scaledSize: new google.maps.Size(5, 5),
+      scaledSize: new google.maps.Size(1, 1),
       type: 'local153'
     },
 
@@ -170,6 +176,7 @@ $(document).ready(function initMap() {
 
   //Legend navigation logic
 $(document).ready(function() {
+  $("#legend").fadeIn(00);
   $("nav a").click(function() {
     var target = this.rel;
     $("#legend_content dl").hide();

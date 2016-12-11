@@ -123,7 +123,7 @@ $(document).ready(function initMap() {
     }, {
       position: new google.maps.LatLng(40.8021458633399, -77.8670942478257),
       scaledSize: new google.maps.Size(1000, 10000),
-      type: 'pennstate'
+      type: 'psu'
     }, {
       position: new google.maps.LatLng(40.820438, -73.948983),
       scaledSize: new google.maps.Size(1, 1),
@@ -166,7 +166,6 @@ $(document).ready(function initMap() {
 
   //Legend navigation logic
 $(document).ready(function() {
-  $("#background_content").hide();
   $("#legend").fadeIn(1000);
   $("nav a").click(function() {
     var target = this.rel;

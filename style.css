@@ -19,6 +19,7 @@
   background: white;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+  display: none;
 }
 
 #hunter_background {
@@ -26,7 +27,7 @@
   text-align: center;
 }
 
-#pennstate_background {
+#psu_background {
   margin-top: 0px;
   display: none;
 }
@@ -88,7 +89,7 @@
  #hunter_class_list  {
 }
 
-#pennstate_banner {
+#psu_banner {
   background: black;
   width: 500px;
   height: 32px;
@@ -97,7 +98,7 @@
   border-top-left-radius: 25px;
 }
 
-#pennstate_banner_text {
+#psu_banner_text {
   color: white;
   margin: 0 0;
   text-align: center;
@@ -106,7 +107,7 @@
   size: 11.5px;
 }
 
-#pennstate_background_content {
+#psu_background_content {
   position: relative;
   margin: 0 0;
   padding: 5px 10px;

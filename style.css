@@ -420,6 +420,11 @@ img#local153 {
   display: block;
 }
 
+.legend_item {
+  position: relative;                                             
+  font-size: 12px;
+  display: block;
+}
 
 a {
   text-decoration: none;

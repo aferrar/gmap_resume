@@ -22,9 +22,7 @@ $(document).ready(function initMap() {
         {
           featureType: "all",
           elementType: "labels",
-          stylers: [
-        { visibility: "off" }
-          ]
+          stylers: [{ visibility: "off" }]
         }]
       ,
       {name: 'Styled Map'});

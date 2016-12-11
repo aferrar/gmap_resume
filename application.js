@@ -123,7 +123,7 @@ $(document).ready(function initMap() {
     }, {
       position: new google.maps.LatLng(40.8021458633399, -77.8670942478257),
       scaledSize: new google.maps.Size(1000, 10000),
-      type: 'psu'
+      type: 'pennstate'
     }, {
       position: new google.maps.LatLng(40.820438, -73.948983),
       scaledSize: new google.maps.Size(1, 1),
@@ -167,25 +167,25 @@ $(document).ready(function initMap() {
   //Legend navigation logic
 $(document).ready(function() {
   $("#background_content").hide();
-  $("#legend").fadeIn(1500);
+  $("#legend").fadeIn(1000);
   $("nav a").click(function() {
     var target = this.rel;
     $("#legend_content dl").hide();
-    $("#"+target+"_content").fadeIn(1500);
+    $("#"+target+"_content").fadeIn(1000);
     $("nav button").css({"background-color": "black", "color": "white"});
     $("#"+target+"_button").css({"background-color": "white", "color": "black"});
   });
   $(".back_to_contacts").click(function() {
     $("#legend_content dl").hide();
-    $("#welcome_content").fadeIn(1500);
-    $("#contact_links").fadeIn(1500);
+    $("#welcome_content").fadeIn(1000);
+    $("#contact_links").fadeIn(1000);
     $("nav button").css({"background-color": "black", "color": "white"});
     $("#background_content").hide();
   });
   $(".legend_item_descrip").on('click', function(){
     var target = this.rel;
-    $("#background_content").show();
+    $("#background_content").fadeIn(1000);
     $(".background_content").hide();
-    $("#"+target+"_background").show();
+    $("#"+target+"_background").fadeIn(1000);
 });
 }); 

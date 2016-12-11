@@ -87,12 +87,6 @@ $(document).ready(function initMap() {
       map: map,
       animation: google.maps.Animation.DROP,
     });
-
-    marker.addListener('click', function(){
-        map.panTo(marker.getPosition());
-        map.setZoom(19);
-        map.setMapTypeId('satellite');
-      });
   };
   
   function drop() {
@@ -154,11 +148,7 @@ $(document).ready(function initMap() {
       position: new google.maps.LatLng(40.746314, -73.991736),
       scaledSize: new google.maps.Size(1, 1),
       type: 'juliarosa'
-    }, {
-      position: new google.maps.LatLng(40.737143, -73.996844),
-      scaledSize: new google.maps.Size(1, 1),
-      type: 'local153'
-    },
+    }, 
 
     
   ];
@@ -176,7 +166,8 @@ $(document).ready(function initMap() {
 
   //Legend navigation logic
 $(document).ready(function() {
-  $("#legend").fadeIn(00);
+  $("#background_content").hide();
+  $("#legend").fadeIn(1500);
   $("nav a").click(function() {
     var target = this.rel;
     $("#legend_content dl").hide();
@@ -189,5 +180,12 @@ $(document).ready(function() {
     $("#welcome_content").fadeIn(1500);
     $("#contact_links").fadeIn(1500);
     $("nav button").css({"background-color": "black", "color": "white"});
+    $("#background_content").hide();
   });
+  $(".legend_item_descrip").on('click', function(){
+    var target = this.rel;
+    $("#background_content").show();
+    $(".background_content").hide();
+    $("#"+target+"_background").show();
+});
 }); 

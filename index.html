@@ -13,15 +13,15 @@
     <div id="map"></div>
     <div id="legend">
         <nav>
-            <ul>
-                <li>
+            <ul class="legend_navigation">
+                <li class="legend_navigation">
                     <a id="professional_link" rel="professional" href="#"><button id="professional_button">Professional</button></a>
                 </li>
-                <li>
+                <li class="legend_navigation">
                     <a id="academic_link" rel="academic" href="#"><button id="academic_button">Academic</button></a>
                 </li>
-                <li>
-                    <a id="personal_link" rel="personal" href="#"><button id="personal_button">Personal</button></a>
+                <li class="legend_navigation">
+                    <a id="project_link" rel="project" href="#"><button id="project_button">Projects</button></a>
                 </li>
             </ul>
         </nav>
@@ -33,26 +33,26 @@
                 <p>Please select from the navigation links above to expand this legend.</p>
                 <p>From there you can begin your geospatial journey to learn more about me.</p>
                 <p>Click "Home" to reset the mapview and return this message</p>
-                <p>If you're short on time feel free to jump straight to my <a id="resume_link" href="assets/resume.pdf" target="blank">resume</a> or see how to contact me below.</p> 
+                <p>If you're short on time feel free to jump straight to my <a id="resume_link" href="assets/resume.pdf" target="_blank">resume</a> or see how to contact me below.</p> 
             </dl>
             <dl id="contact_links">
                 <ul class="contact_links">
-                    <li class="twitter">
-                      <a id="twitter_link" href="https://twitter.com/aferrar90"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                    <li class="contact_links" id="twitter">
+                      <a id="twitter_link" href="https://twitter.com/aferrar90"><i class="fa fa-twitter" aria-hidden="true" target="_blank"></i> Twitter</a>
                     </li>
-                    <li class="linkedin">
+                    <li class="contact_links" id="linkedin">
                       <a id="linkedin_link" href="https://www.linkedin.com/in/adrian-ferrar-6b736993
-"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+"><i class="fa fa-linkedin" aria-hidden="true" target="_blank"></i> LinkedIn</a>
                     </li>
-                    <li class="github">
-                      <a id="github_link" href="https://github.com/aferrar"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
+                    <li class="contact_links" id="github">
+                      <a id="github_link" href="https://github.com/aferrar"><i class="fa fa-github" aria-hidden="true" target="_blank"></i> Github</a>
                     </li>
                     <br />
-                    <li class="fcc">
-                      <a id="fcc_link" href="https://www.freecodecamp.com/aferrar"><i class="fa fa-code" aria-hidden="true"></i> Free Code Camp</a>
+                    <li class="contact_links" id="fcc">
+                      <a id="fcc_link" href="https://www.freecodecamp.com/aferrar"><i class="fa fa-code" aria-hidden="true" target="_blank"></i> Free Code Camp</a>
                     </li>
-                    <li class="gmail">
-                      <a id="gmail_link" href="mailto:aferrar90@gmail.com"><i class="fa fa-google" aria-hidden="true"></i> Gmail</a>
+                    <li class="contact_links" id="gmail">
+                      <a id="gmail_link" href="mailto:aferrar90@gmail.com"><i class="fa fa-google" aria-hidden="true" target="_blank"></i> Gmail</a>
                     </li>
                 </ul>
             </dl>
@@ -63,23 +63,20 @@
             <hr class="break"></hr>
                 <img align ="center" id ="nyrp"  src="assets/images/nyrp_icon.svg"></img>
                     <a href="#" rel="nyrp" class="legend_item_descrip" id="nyrp_descrip">NEW YORK RESTORATION PROJECT</a>
-                        <div href="#" class="legend_item_descrip" id="nyrp_record">[Environmental Steward]</div>
+                        <div href="#" class="record">[Environmental Steward]</div>
                     <br/>
                 <img id="atlas" src="assets/images/atlas_icon.svg"></img>
                     <a href="#" rel="atlas" class="legend_item_descrip" id="atlas_descrip">ATLAS ENVIRONMENTAL LABORATORY</a>
-                        <div href="#" class="legend_item_descrip" id="atlas_record">[Environmental Lab Analyst]</div>
+                        <div href="#" class="record">[Environmental Lab Analyst]</div>
                     <br/>
-                <img id="ccny" src="assets/images/telepathywht_icon.svg"></img>
+                <img id="telepathy" src="assets/images/telepathywht_icon.svg"></img>
                     <a href="#" rel="telepathy" class="legend_item_descrip" id="telepathy_descrip">TELEPATHY</a>
-                        <div href="#" class="legend_item_descrip" id="telepathy_record">[Typist/Programming Intern]</div>
+                        <div href="#" class="record">[Typist/Programming Intern]</div>
                     <br/>
-                <img id="ccny" src="assets/images/juliarosa_icon.svg"></img>
+                <img id="juliarosa" src="assets/images/juliarosa_icon.svg"></img>
                     <a href="#" rel="juliarosa" class="legend_item_descrip" id="juliarosa_descrip">JULIA ROSA FLORAL EVENT DESIGN</a>
-                        <div href="#" class="legend_item_descrip" id="juliarosa_record">[Sustainability Intern]</div>
+                        <div href="#" class="record">[Sustainability Intern]</div>
                     <br/>
-                <img id="juliarosa" src="assets/images/local153_icon.svg"></img>
-                    <a href="#" rel="local153" class="legend_item_descrip" id="local153_descrip">OPEIU: LOCAL 153</a>
-                        <div href="#" class="legend_item_descrip" id="local153_record">[Administrative Assistant]</div>
             </dl>
             <dl id="academic_content">
                 <a class="back_to_contacts" href="#" rel="">Home</a>
@@ -88,37 +85,139 @@
                 <hr id="break_academic" class="break"></hr>
                 <img align ="center" id ="hunter"  src="assets/images/hunter_icon.svg"></img>
                     <a href="#" rel="hunter" class="legend_item_descrip" id="hunter_descrip">HUNTER COLLEGE</a>
-                        <div href="#" class="legend_item_descrip" id="hunter_record">[M.A. Geography]</div>
+                        <div href="#" class="record">[M.A. Geography]</div>
                     <br/>
                 <img id="ccny" src="assets/images/psu_icon.svg"></img>
-                    <a href="#" rel="psu" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
-                        <div href="#" class="legend_item_descrip" id="psu_record">[M.P.S Sustainability, Management, &amp; Policy]</div>
+                    <a href="#" rel="pennstate" class="legend_item_descrip" id="psu_descrip">PENN STATE UNIVERSITY</a>
+                        <div href="#" class="record">[M.P.S Sustainability, Management, &amp; Policy]</div>
                     <br/>
                 <img id="ccny" src="assets/images/ccny_icon.svg"></img>
                     <a href="#" rel="ccny" class="legend_item_descrip" id="ccny_descrip">CITY COLLEGE OF NY</a>
-                        <div href="#" class="legend_item_descrip" id="ccny_record">[B.S. Geology]</div>
+                        <div href="#" class="record">[B.S. Geology]</div>
                     <br/>
                 <img id="hsmse" src="assets/images/hsmse_icon.svg"></img>
                     <a href="#" rel="hsmse" class="legend_item_descrip" id="hsmse_descrip">H.S. MATH,SCI,ENGINEERING</a>
-                        <div href="#" class="legend_item_descrip" id="ccny_record">[Coursework]</div>
+                        <div href="#" class="record">[H.S. Degree]</div>
             </dl>
-            <dl id="personal_content">
+            <dl id="project_content">
                 <a class="back_to_contacts" href="#" rel="">Home</a>
                 <hr></hr>
-                <dt id="personal_title" class="category_title">PERSONAL</dt>
-                <hr class="break"></hr>
-                <h3>Under Construction</h3>
+                <dt id="project_title" class="category_title">PROJECTS</dt>
+                <hr id="break_project" class="break"></hr>
+                    <a href="assets/AF_GTECH709_Final.pptx" class="legend_item_descrip" id="gtech709_decrip" target="_blank">Analyzing 311 Street Complaints w/ ArcGIS</a>
+                <br/>
+                    <a href="assets/AF_EME805_Final.pdf" class="legend_item_descrip" id="eme805_descrip" target="_blank">NYC Flower Market Sustainability</a>
+                <br/>
+                    <a href="assets/AF_EME807_Final.pdf" class="legend_item_descrip" id="eme807_decrip" target="_blank">Helen's House Net Zero Energy</a>
+                <br/>
+                    <a href="assets/AF_BA850_Final.pdf" class="legend_item_descrip" id="ba850_descrip" target="_blank">Apple Earth</a>
+                <br/>
             </dl>
         </div>
     </div>
-    <div id="background">
-    	<div id="nyrp_banner">
-    		<dl id="nyrp_banner_text">
-    		HUNTER COLLEGE - CITY UNIVERSITY OF NEW YORK	
-    		</dl>
-    	</div>
-    	<div id="background_content">
-    	</div>
+    <div id="background_content">
+        <dl class="background_content" id="hunter_background">
+        	<dl id="hunter_banner">
+        		<dl id="hunter_banner_text">
+        		HUNTER COLLEGE - CITY UNIVERSITY OF NEW YORK	
+        		</dl>
+            </dl>
+        	<dl id="hunter_background_content">
+                <p>I am a currently enrolled graduated student completing my MA with the Department of Geography at Hunter College.</p> 
+                <p>My interests fall mostly in the realm of Physical Geography and in the geospatial tools associated with modeling.</p>
+                <p>I am also very much interested in expanding my knowledge of Geospatial Web Services. I used Google Maps API to build this webpage.</p>
+                <p>I am winding down my first semester and excited to be be taking the following courses in the next one:</p>
+                <ul>
+                    <li>GEOG 70154 - Research Design Geography</li>
+                    <li>GTECH 71200 - Remote Sensing of the Environment</li>
+                    <li>GTECH 78501 - Urban Applications of GIS</li>
+                </ul>
+            </dl>
+        </dl>
+        <dl class="background_content" id="pennstate_background">
+            <dl id="pennstate_banner">
+                <dl id="pennstate_banner_text">
+                PENNSYLVANIA STATE UNIVERSITY
+                </dl>
+            </dl>
+            <dl id="pennstate_background_content">
+                <p>I am a currently enrolled graduated student completing my MPS with the Department of Renewable Energy and Sustainability Systems.</p>
+                <p>My interests include environmental public policy, stakeholder assessment, renewable energy generation, and Life Cycle Analyses.</p>
+                <p>In addition, I have become proficient at assessing sustainable technologies to determine the greatest long-term benefits and identify potential sociial, economic and environmental concerns.</p>
+            </dl>
+        </dl>
+        <dl class="background_content" id="ccny_background">    
+            <dl id="ccny_banner">
+                <dl id="ccny_banner_text">
+                THE CITY COLLEGE OF NEW YORK
+                </dl>
+            </dl>
+            <dl id="ccny_background_content">
+                <p>I graduated from CCNY in May of 2014 with a degree in Geography from the Department of Earth and Atmospheric Sciences.</p>
+                <p>During this time I enrolled and excelled in courses directly associated with understanding complex Earth systems, such as Sedimentology, Hydrology, and Atmospheric Science. I conducted extensive fieldwork collecting GPS coordinates and groundwater samples and succinctly communicated my results in the form of academic reports.</p>
+                <p>In addition, I gained valuable laboratory experience as a research assistant investigating controlled interactions of bacteria, bacteriophage, and inorganic clays to replicate and model natural dynamics.</p>
+            </dl>
+        </dl>
+        <dl class="background_content" id="hsmse_background">
+            <dl id="hsmse_banner">
+                <dl id="hsmse_banner_text">
+                THE HIGH SCHOOL FOR MATH, SCIENCE, & ENGINEERING
+                </dl>
+            </dl>
+            <dl id="hsmse_background_content">
+                <p>I graduated from HSMSE in 2008.</p>
+                <p>While there I had the opportunity to take courses related to digital electronics, architectural design, and advanced mathematics for college credit.</p>  
+            </dl>
+        </dl>
+        <dl class="background_content" id="nyrp_background">
+            <dl id="nyrp_banner">
+                <dl id="nyrp_banner_text">
+                THE NEW YORK RESTORATION PROJECT
+                </dl>
+            </dl>
+            <dl id="nyrp_background_content">
+                <p>I served as an Americorp Environmental Steward for a 6 month term from May to October in 2016.</p>
+                <p>During this period I performed essential functions in maintaining shared community gardens in Brownsville New York.</p>
+                <p>In addition, I helped plan outreach events, led volunteers during planting events, and provided technical support and training to community gardeners.</p>
+            </dl>
+        </dl>
+        <dl class="background_content" id="atlas_background">
+            <dl id="atlas_banner">
+                <dl id="hsmse_banner_text">
+                ATLAS ENVIRONMENTAL LABORATORY
+                </dl>
+            </dl>
+             <dl id="atlas_background_content">
+                <p>I worked as an environmental laboratory researcher from August to December in 2015.</p>
+                <p>During this period I analyzed bulk construction materials for asbestos fibers through various forms of microscopy.</p>
+                <p>In addition, I performed lead concentration analyses on a variet of construction samples and drafted summary reports.</p>
+            </dl>
+        </dl>
+        <dl class="background_content" id="telepathy_background">
+            <dl id="telepathy_banner">
+                <dl id="telepathy_banner_text">
+                TELEPATHY INTERNSHIP
+                </dl>
+            </dl>
+            <dl id="telepathy_background_content">
+                <p>I interned as the assistant to an independent computer application developer from September 2014 to August of 2015.</p>
+                <p>During this period I became familiar with standard web development workflows, as well as elements of front-end web design.</p>
+                <p>I developed a proficiency with HTML, CSS, Javascript, and Pyton.</p>
+                <p>In addition, I served as his personal typist and vastly improved my typing accuracy and speed.</p>
+            </dl>
+        </dl>
+        <dl class="background_content" id="juliarosa_background">
+            <dl id="juliarosa_banner">
+                <dl id="juliarosa_banner_text">
+                JULIA ROSA FLORAL EVENT DESIGN SUSTAINABILITY INTERNSHIP
+                </dl>
+            </dl>
+            <dl  id="juliarosa_background_content">
+                <p>I interned as a sustainability advisor to a floral event design company from February to May of 2015.</p>
+                <p>During this period I consulted with the company on low impact product procurement and drafted a report documenting sustainable practices for the surrounding flower district.</p>
+                <p>I also had the opportunity to work with business representatives of NYC's floral district to determine the potential for a flower district consortium.</p>
+            </dl>
+        </dl>
     </div>
 
     <script type="text/javascript" src="assets/jquery-3.1.1.js"></script>

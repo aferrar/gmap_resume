@@ -7,18 +7,158 @@
   z-index: 0;
 }
 
-#background {
+#background_content {
   position: absolute;
   z-index: 1;
   width: 500px;
   right: 5px;
   margin-top: 50px;
-  height: 700px;
+  padding-top: 0px;
+  height: 400px;
   opacity: .85;
   background: white;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+}
+
+#hunter_background {
+  margin-top: 0px;
+  text-align: center;
+}
+
+#pennstate_background {
+  margin-top: 0px;
   display: none;
+}
+
+#ccny_background {
+  margin-top: 0px;
+  display: none;
+}
+
+#hsmse_background {
+  margin-top: 0px;
+  display: none;
+}
+
+#nyrp_background {
+  margin-top: 0px;
+  display: none;
+}
+
+#atlas_background {
+  margin-top: 0px;
+  display: none;
+}
+
+#telepathy_background {
+  margin-top: 0px;
+  display: none;
+}
+
+#juliarosa_background {
+  margin-top: 0px;
+  display: none;
+}
+
+#hunter_banner {
+  background: black;
+  position: relative;
+  width: 500px;
+  height: 32px;
+  margin: 0 0;
+  opacity: .85;
+  border-top-left-radius: 25px;
+}
+
+#hunter_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .85;
+  size: 11.5px;
+}
+
+#hunter_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
+}
+
+ #hunter_class_list  {
+}
+
+#pennstate_banner {
+  background: black;
+  width: 500px;
+  height: 32px;
+  margin: 0 0;
+  opacity: .85;
+  border-top-left-radius: 25px;
+}
+
+#pennstate_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .85;
+  size: 11.5px;
+}
+
+#pennstate_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
+}
+
+#ccny_banner {
+  background: black;
+  width: 500px;
+  height: 32px;
+  margin: 0 0;
+  opacity: .85;
+  border-top-left-radius: 25px;
+}
+
+#ccny_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .85;
+  size: 11.5px;
+}
+
+#ccny_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
+}
+
+#hsmse_banner {
+  background: black;
+  width: 500px;
+  height: 32px;
+  margin: 0 0;
+  opacity: .85;
+  border-top-left-radius: 25px;
+}
+
+#hsmse_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .85;
+  size: 11.5px;
+}
+
+#hsmse_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
 }
 
 #nyrp_banner {
@@ -27,7 +167,6 @@
   height: 32px;
   margin: 0 0;
   opacity: .85;
-  display: table;
   border-top-left-radius: 25px;
 }
 
@@ -35,17 +174,88 @@
   color: white;
   margin: 0 0;
   text-align: center;
-  display: table-cell;
   vertical-align: middle;
   opacity: .85;
   size: 11.5px;
 }
 
-#background_content {
+#nyrp_background_content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50);
+  padding: 5px 10px;
+}
+
+#atlas_banner {
+  background: black;
+  width: 500px;
+  height: 32px;
   margin: 0 0;
-  height: 100%;
-  width: 100%;
-  padding: 25px 10px 25px 10px;
+  opacity: .85;
+  border-top-left-radius: 25px;
+}
+
+#atlas_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .85;
+  size: 11.5px;
+}
+
+#atlas_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
+}
+
+#telepathy_banner {
+  background: black;
+  width: 500px;
+  height: 32px;
+  margin: 0 0;
+  opacity: .85;
+  border-top-left-radius: 25px;
+}
+
+#telepathy_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .85;
+  size: 11.5px;
+}
+
+#telepathy_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
+}
+
+#juliarosa_banner {
+  background: black;
+  width: 500px;
+  height: 32px;
+  margin: 0 0;
+  opacity: .85;
+  border-top-left-radius: 25px;
+}
+
+#juliarosa_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: .85;
+  size: 11.5px;
+}
+
+#juliarosa_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
 }
 
 #legend {
@@ -71,18 +281,18 @@ nav {
   width: 100%
  }
 
-ul {
+ul.legend_navigation {
   position: relative;
   list-style-type: none;
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  display: table-cell;
+  display: inline;
 }
 
-li {
+li.legend_navigation {
   position: relative;
-  display: inline;
   margin: 0px;
+  display: inline;
 }
 
 button {
@@ -118,7 +328,7 @@ button {
     border: none;
 }
 
-#personal_button {
+#project_button {
     background: black; /* Test colors later -- Green - #4CAF50 */
     color: white;
     padding: 10px 2px;
@@ -143,7 +353,7 @@ button {
 .back_to_contacts {
   position: absolute;
   top: 15px;
-  right: 15px;
+  left: 15px;
   font-size: 12px;
 }
 
@@ -156,7 +366,7 @@ button {
 
 }
 
-#personal_content {
+#project_content {
   display: none;
 }
 
@@ -172,6 +382,10 @@ button {
 }
 
 #break_academic {
+  margin-bottom: 30px;
+}
+
+#break_project {
   margin-bottom: 30px;
 }
 
@@ -194,11 +408,18 @@ img#local153 {
   margin-top: 5px;
 }
 
+.record {
+  position: relative;                                             
+  font-size: 12px;
+  display: block;
+}
+
 .legend_item_descrip {
   position: relative;                                             
   font-size: 12px;
   display: block;
 }
+
 
 a {
   text-decoration: none;
@@ -207,11 +428,6 @@ a {
 nav a:hover {
   text-decoration: underline;
   color: white;
-}
-
-#legend_content a:hover {
-  text-decoration: underline;
-  color: black;
 }
 
 h1 {
@@ -231,6 +447,14 @@ p {
   text-decoration: underline;
 }
 
+ul.contact_links {
+  position: relative;
+  list-style-type: none;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: table-cell;
+}
+
 dl#contact_links {
   bottom: 15px;
   text-decoration: none;
@@ -239,6 +463,11 @@ dl#contact_links {
   position: absolute;
   left: 10%;
 }
+
+li.contact_links {
+  display: inline;
+}
+
 @font-face {
   font-family: 'NiconneRegular';
   src: url('assets/fonts/NiconneRegular/NiconneRegular.eot');
@@ -250,34 +479,4 @@ dl#contact_links {
   src: url('assets/fonts/registry/registry.eot');
   src: local('registry'), url('assets/fonts/registry/registry.woff') format('woff'), url('assets/fonts/registry/registry.ttf') format('truetype');
 }
-/* <!-- Getting ahead of yourself, fool! -->
-#welcome {
-  position: absolute;
-  z-index: 1;
-  width: 450px;
-  margin: 50px 350px auto 750px;
-  background-color: white;
-  height: 300px;
-  border-radius: 25px;
-  opacity: .9;
-  display: none;
-}
 
-<!-- Don't think I needed this, but too afraid to let go.. yet -->
-ul #legend_content {
-  position: relative;
-  list-style-type: none;
-  padding: 0 0 0 0;
-  margin: 0 0 0px 0;
-  top: 25px;
-  left: 5px;
-  height: 100%
-}
-
-li #legend_content {
-  position: relative;
-  width: 100%;
-}
-
-
-*/

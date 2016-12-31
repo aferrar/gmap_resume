@@ -277,7 +277,7 @@ nav {
   top: 0px;
   text-align: center;
   opacity: .85;
-  display: table;
+  display: inline;
   width: 100%
  }
 
@@ -466,7 +466,7 @@ dl#contact_links {
   text-decoration: none;
   font-family: none;
   font-size: 14px;
-  position: absolute;
+  position: relative;
   left: 10%;
 }
 

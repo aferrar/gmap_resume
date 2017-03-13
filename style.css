@@ -15,7 +15,7 @@
   margin-top: 50px;
   padding-top: 0px;
   height: 400px;
-  opacity: .85;
+  opacity: 1;
   background: white;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -68,7 +68,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -76,7 +76,7 @@
   color: white;
   margin: 0 0;
   text-align: center;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -94,7 +94,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -103,7 +103,7 @@
   margin: 0 0;
   text-align: center;
   vertical-align: middle;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -118,7 +118,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -127,7 +127,7 @@
   margin: 0 0;
   text-align: center;
   vertical-align: middle;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -142,7 +142,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -151,7 +151,7 @@
   margin: 0 0;
   text-align: center;
   vertical-align: middle;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -166,7 +166,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -175,7 +175,7 @@
   margin: 0 0;
   text-align: center;
   vertical-align: middle;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -191,7 +191,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -200,7 +200,7 @@
   margin: 0 0;
   text-align: center;
   vertical-align: middle;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -215,7 +215,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -224,7 +224,7 @@
   margin: 0 0;
   text-align: center;
   vertical-align: middle;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -239,7 +239,7 @@
   width: 500px;
   height: 32px;
   margin: 0 0;
-  opacity: .85;
+  opacity: 1;
   border-top-left-radius: 25px;
 }
 
@@ -248,7 +248,7 @@
   margin: 0 0;
   text-align: center;
   vertical-align: middle;
-  opacity: .85;
+  opacity: 1;
   size: 11.5px;
 }
 
@@ -266,7 +266,7 @@
   margin: 50px auto 0;
   padding: 0px;
   height: 700px;
-  opacity: .85;
+  opacity: 1;
   background: white;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -276,7 +276,7 @@ nav {
   position: relative;
   top: 0px;
   text-align: center;
-  opacity: .85;
+  opacity: 1;
   display: inline;
   width: 100%
  }
@@ -310,7 +310,7 @@ button {
     font-size: 11.5px;
     font-weight: bold;
     width: 78px;
-    opacity: .85;
+    opacity: 1;
     border: none;
 }
 
@@ -324,7 +324,7 @@ button {
     font-size: 11.5px;
     font-weight: bold;
     width: 78px;
-    opacity: .85;
+    opacity: 1;
     border: none;
 }
 
@@ -338,7 +338,7 @@ button {
     font-size: 11.5px;
     font-weight: bold;
     width: 86px;
-    opacity: .85;
+    opacity: 1;
     border: none;
     border-top-right-radius: 25px;
 }
@@ -353,8 +353,9 @@ button {
 .back_to_contacts {
   position: absolute;
   top: 15px;
-  left: 15px;
+  left: 110px;
   font-size: 12px;
+
 }
 
 #professional_content {

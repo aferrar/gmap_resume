@@ -72,9 +72,9 @@ $(document).ready(function initMap() {
       name: 'JULIA ROSA FLORAL EVENT DESIGN' ,
       icon: iconBase + 'juliarosa_marker.svg'
     },
-    local153: {
-      name: 'OPEIU: LOCAL 153' ,
-      icon: iconBase + 'local153_marker.svg'
+    dot: {
+      name: 'DEPARTMENT OFTRANSPORTATION' ,
+      icon: iconBase + 'dot_marker.jpg'
     },
   };
 
@@ -146,6 +146,10 @@ $(document).ready(function initMap() {
       position: new google.maps.LatLng(40.746314, -73.991736),
       scaledSize: new google.maps.Size(1, 1),
       type: 'juliarosa'
+    }, {
+      position: new google.maps.LatLng(40.703258, -74.009626),
+      scaledSize: new google.maps.Size(1, 1),
+      type: 'dot'
     }, 
 
     

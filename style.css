@@ -22,6 +22,11 @@
   display: none;
 }
 
+#dot_background {
+  margin-top: 0px;
+  text-align: center;
+}
+
 #hunter_background {
   margin-top: 0px;
   text-align: center;
@@ -62,6 +67,25 @@
   display: none;
 }
 
+#dot_banner {
+  background: black;
+  position: relative;
+  width: 500px;
+  height: 32px;
+  margin: 0 0;
+  opacity: 1;
+  border-top-left-radius: 25px;
+}
+
+#dot_banner_text {
+  color: white;
+  margin: 0 0;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 1;
+  size: 11.5px;
+}
+
 #hunter_banner {
   background: black;
   position: relative;
@@ -78,6 +102,12 @@
   text-align: center;
   opacity: 1;
   size: 11.5px;
+}
+
+#dot_background_content {
+  position: relative;
+  margin: 0 0;
+  padding: 5px 10px;
 }
 
 #hunter_background_content {
@@ -403,7 +433,7 @@ img {
   margin-top: 10px;
  }
 
-img#local153 {
+img#dot {
   height:60px !important;
   width:60px !important;
   margin-top: 5px;

@@ -107,7 +107,7 @@ $(document).ready(function initMap() {
     for (var i=0, feature; feature = features[i]; i++) {
       if (feature.type === target) {
           map.panTo(feature.position);
-          map.setZoom(19);
+          map.setZoom(18);
           map.setMapTypeId('satellite');
       }
     }

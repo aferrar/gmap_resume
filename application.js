@@ -172,12 +172,14 @@ $(document).ready(function() {
   $("nav a").click(function() {
     var target = this.rel;
     $(".legend_content").hide();
+    $(".contact_links").hide();
     $("#"+target+"_content").fadeIn(1000);
     $("nav button").css({"background-color": "black", "color": "white"});
     $("#"+target+"_button").css({"background-color": "white", "color": "black"});
   });
   $(".back_to_contacts").click(function() {
     $(".legend_content").hide();
+    $(".contact_links").fadeIn(1000);
     $("#welcome_content").fadeIn(1000);
     $("#contact_links").fadeIn(1000);
     $("nav button").css({"background-color": "black", "color": "white"});

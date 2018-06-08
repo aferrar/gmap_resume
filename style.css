@@ -368,3 +368,8 @@ li.contact_links {
   src: local('registry'), url('assets/fonts/registry/registry.woff') format('woff'), url('assets/fonts/registry/registry.ttf') format('truetype');
 }
 
+@media screen and (max-width: 600px) {
+  #project_button {
+    width: 85px;
+    }
+}

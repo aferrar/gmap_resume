@@ -168,7 +168,7 @@ $(document).ready(function initMap() {
   //Legend navigation logic. This can be elaborated on.
 $(document).ready(function() {
   $("#legend").fadeIn(1000);
-  $("nav a").click(function() {
+  $("#professional_link").click(function() {
     var target = this.rel;
     $(".legend_content").hide();
     $(".contact_links").hide();
@@ -177,11 +177,28 @@ $(document).ready(function() {
     $("#legend").css({"height": "700px"})
     $("#"+target+"_button").css({"background-color": "white", "color": "black"});
   });
+  $("#academic_link").click(function() {
+    var target = this.rel;
+    $(".legend_content").hide();
+    $(".contact_links").hide();
+    $("#"+target+"_content").fadeIn(1000);
+    $("nav button").css({"background-color": "black", "color": "white"});
+    $("#legend").css({"height": "600px"})
+    $("#"+target+"_button").css({"background-color": "white", "color": "black"});
+  });
+  $("#project_link").click(function() {
+    var target = this.rel;
+    $(".legend_content").hide();
+    $(".contact_links").hide();
+    $("#"+target+"_content").fadeIn(1000);
+    $("nav button").css({"background-color": "black", "color": "white"});
+    $("#legend").css({"height": "400px"})
+    $("#"+target+"_button").css({"background-color": "white", "color": "black"});
+  });
   $(".back_to_contacts").click(function() {
     $(".legend_content").hide();
-    $(".contact_links").fadeIn(1000);
-    $("#welcome_content").fadeIn(1000);
-    $("#contact_links").fadeIn(1000);
+    $("#welcome_content").fadeIn(500);
+    $(".contact_links").fadeIn(1500);
     $("nav button").css({"background-color": "black", "color": "white"});
     $("#legend").css({"height": "600px"})
     $("#background_content").hide();

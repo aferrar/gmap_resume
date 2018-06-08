@@ -15,7 +15,7 @@
   margin-top: 50px;
   padding-top: 0px;
   height: 500px;
-  opacity: 0.75;
+  opacity: 0.85;
   background: white;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -25,7 +25,6 @@
 #dot_background {
   margin-top: 0px;
   text-align: center;
-  height: 1000px;
 }
 
 #hunter_background {
@@ -228,15 +227,14 @@ button {
     border-top-right-radius: 25px;
 }
 
-#legend_content {
-  position: relative;
-  padding: 10px 10px 25px 10px;
+.legend_content {
+  padding: 0px 10px 0px 10px;
   text-align: center;
   }
 
-.back_to_contacts {
+div.back_to_contacts {
   font-size: 15px;
-
+  margin: 15px 10px 15px 10px;
 }
 
 #professional_content {
@@ -253,7 +251,6 @@ button {
 }
 
 #category_title {
-  text-align: center;
   font-size: 18px;
   color: black;
 }
@@ -293,12 +290,14 @@ img#dot {
   position: relative;                                             
   font-size: 12px;
   display: block;
+  text-align: center;
 }
 
 .legend_item_descrip {
   position: relative;                                             
   font-size: 12px;
   display: block;
+  text-align: center;
 }
 
 .legend_item {
@@ -319,14 +318,14 @@ nav a:hover {
 h1 {
   font-family: 'Noto Sans', sans-serif;
   text-align: left;
-  margin-bottom: 25px;
+  margin: 10px 0px 10px 0px;
 }
 
 p {
   font-family: 'Noto Sans', sans-serif;
-  text-align: left;
+  text-align: justify;
   font-size: 17px;
-  margin-bottom: 5px;
+  margin: 0px 0px 20px 0px;
 }
 
 #resume_link {
@@ -335,7 +334,7 @@ p {
 
 ul.contact_links {
   list-style-type: none;
-  padding: 0 0 0 0;
+  padding: 0 0 0 10;
   margin: 0 0 0 0;
   display: table-cell;
 }

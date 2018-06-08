@@ -222,7 +222,7 @@ button {
     display: inline;
     font-size: 11.5px;
     font-weight: bold;
-    width: 87px;
+    width: 83px;
     opacity: 1;
     border: none;
     border-top-right-radius: 25px;
@@ -366,10 +366,4 @@ li.contact_links {
   font-family: "registry";
   src: url('assets/fonts/registry/registry.eot');
   src: local('registry'), url('assets/fonts/registry/registry.woff') format('woff'), url('assets/fonts/registry/registry.ttf') format('truetype');
-}
-
-@media screen and (max-width: 600px) {
-  #project_button {
-    width: 75px;
-  }
 }

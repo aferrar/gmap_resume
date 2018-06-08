@@ -86,7 +86,7 @@ $(document).ready(function initMap() {
       animation: google.maps.Animation.DROP,
     });
   };
-  
+
   function drop() {
     for (var i =0; i < features.length; i++) {
       setTimeout(function() {
@@ -158,13 +158,12 @@ $(document).ready(function initMap() {
   for (var i = 0, feature; feature = features[i]; i++) {
     addMarker(feature);
   }
-
+  
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set('styled_map', styledMapType);
   map.setMapTypeId('styled_map'); 
 
 });
-
 
   //Legend navigation logic
 $(document).ready(function() {
@@ -190,5 +189,5 @@ $(document).ready(function() {
     $("#background_content").fadeIn(1000);
     $(".background_content").hide();
     $("#"+target+"_background").fadeIn(1000);
-});
+  });
 }); 

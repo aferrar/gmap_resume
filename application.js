@@ -165,7 +165,7 @@ $(document).ready(function initMap() {
 
 });
 
-  //Legend navigation logic
+  //Legend navigation logic. This can be elaborated on.
 $(document).ready(function() {
   $("#legend").fadeIn(1000);
   $("nav a").click(function() {
@@ -174,6 +174,7 @@ $(document).ready(function() {
     $(".contact_links").hide();
     $("#"+target+"_content").fadeIn(1000);
     $("nav button").css({"background-color": "black", "color": "white"});
+    $("#legend").css({"height": "700px"})
     $("#"+target+"_button").css({"background-color": "white", "color": "black"});
   });
   $(".back_to_contacts").click(function() {
@@ -182,6 +183,7 @@ $(document).ready(function() {
     $("#welcome_content").fadeIn(1000);
     $("#contact_links").fadeIn(1000);
     $("nav button").css({"background-color": "black", "color": "white"});
+    $("#legend").css({"height": "600px"})
     $("#background_content").hide();
   });
   $(".legend_item_descrip").on('click', function(){

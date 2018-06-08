@@ -11,11 +11,11 @@
   position: absolute;
   z-index: 1;
   width: 500px;
-  right: 5px;
+  right: 0px;
   margin-top: 50px;
   padding-top: 0px;
-  height: 400px;
-  opacity: 1;
+  height: 500px;
+  opacity: 0.75;
   background: white;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
@@ -25,6 +25,7 @@
 #dot_background {
   margin-top: 0px;
   text-align: center;
+  height: 1000px;
 }
 
 #hunter_background {
@@ -67,17 +68,17 @@
   display: none;
 }
 
-#dot_banner {
+#banner {
   background: black;
   position: relative;
   width: 500px;
-  height: 32px;
+  height: 35px;
   margin: 0 0;
   opacity: 1;
   border-top-left-radius: 25px;
 }
 
-#dot_banner_text {
+#banner_text {
   color: white;
   margin: 0 0;
   text-align: center;
@@ -86,23 +87,6 @@
   size: 11.5px;
 }
 
-#hunter_banner {
-  background: black;
-  position: relative;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#hunter_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  opacity: 1;
-  size: 11.5px;
-}
 
 #dot_background_content {
   position: relative;
@@ -116,49 +100,10 @@
   padding: 5px 10px;
 }
 
- #hunter_class_list  {
-}
-
-#psu_banner {
-  background: black;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#psu_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 1;
-  size: 11.5px;
-}
-
 #psu_background_content {
   position: relative;
   margin: 0 0;
   padding: 5px 10px;
-}
-
-#ccny_banner {
-  background: black;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#ccny_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 1;
-  size: 11.5px;
 }
 
 #ccny_background_content {
@@ -167,46 +112,10 @@
   padding: 5px 10px;
 }
 
-#hsmse_banner {
-  background: black;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#hsmse_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 1;
-  size: 11.5px;
-}
-
 #hsmse_background_content {
   position: relative;
   margin: 0 0;
   padding: 5px 10px;
-}
-
-#nyrp_banner {
-  background: black;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#nyrp_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 1;
-  size: 11.5px;
 }
 
 #nyrp_background_content {
@@ -216,70 +125,16 @@
   padding: 5px 10px;
 }
 
-#atlas_banner {
-  background: black;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#atlas_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 1;
-  size: 11.5px;
-}
-
 #atlas_background_content {
   position: relative;
   margin: 0 0;
   padding: 5px 10px;
 }
 
-#telepathy_banner {
-  background: black;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#telepathy_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 1;
-  size: 11.5px;
-}
-
 #telepathy_background_content {
   position: relative;
   margin: 0 0;
   padding: 5px 10px;
-}
-
-#juliarosa_banner {
-  background: black;
-  width: 500px;
-  height: 32px;
-  margin: 0 0;
-  opacity: 1;
-  border-top-left-radius: 25px;
-}
-
-#juliarosa_banner_text {
-  color: white;
-  margin: 0 0;
-  text-align: center;
-  vertical-align: middle;
-  opacity: 1;
-  size: 11.5px;
 }
 
 #juliarosa_background_content {
@@ -367,7 +222,7 @@ button {
     display: inline;
     font-size: 11.5px;
     font-weight: bold;
-    width: 85px;
+    width: 87px;
     opacity: 1;
     border: none;
     border-top-right-radius: 25px;
@@ -381,10 +236,7 @@ button {
   }
 
 .back_to_contacts {
-  position: absolute;
-  top: 5px;
-  left: 110px;
-  font-size: 12px;
+  font-size: 15px;
 
 }
 
@@ -400,7 +252,6 @@ button {
 #project_content {
   display: none;
 }
-
 
 #category_title {
   text-align: center;
@@ -453,7 +304,7 @@ img#dot {
 
 .legend_item {
   position: relative;                                             
-  font-size: 12px;
+  font-size: 16px;
   display: block;
 }
 
